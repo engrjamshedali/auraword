@@ -1,0 +1,8 @@
+{
+  "name": "Remix AuraWord - Professional Word Processor",
+  "description": "A complete Microsoft Word-style document editor featuring a full ribbon interface, real DOCX import/export, pagination, tables, drawings, citations, mail merge, track changes, and AI writing assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

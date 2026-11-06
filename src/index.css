@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/* Word-style typography and ProseMirror styles */
+.auraword-editor-area .ProseMirror {
+  outline: none;
+  min-height: 500px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: break-spaces;
+  -webkit-font-smoothing: antialiased;
+}
+
+.auraword-editor-area .ProseMirror p {
+  margin-bottom: 0.75em;
+}
+
+.auraword-editor-area .ProseMirror h1 {
+  font-size: 1.85em;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  color: #1e3a8a;
+  line-height: 1.25;
+}
+
+.auraword-editor-area .ProseMirror h2 {
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-top: 0.9em;
+  margin-bottom: 0.35em;
+  color: #1e40af;
+  line-height: 1.3;
+}
+
+.auraword-editor-area .ProseMirror h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+  color: #334155;
+  line-height: 1.35;
+}
+
+.auraword-editor-area .ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 1.75em;
+  margin-bottom: 0.75em;
+}
+
+.auraword-editor-area .ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 1.75em;
+  margin-bottom: 0.75em;
+}
+
+.auraword-editor-area .ProseMirror blockquote {
+  border-left: 3px solid #2b579a;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #475569;
+  font-style: italic;
+  background-color: #f8fafc;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.auraword-editor-area .ProseMirror hr {
+  border: none;
+  border-top: 2px dashed #94a3b8;
+  margin: 2rem 0;
+}
+
+.auraword-editor-area .ProseMirror table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  table-layout: fixed;
+}
+
+.auraword-editor-area .ProseMirror th,
+.auraword-editor-area .ProseMirror td {
+  border: 1px solid #cbd5e1;
+  padding: 8px 12px;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.auraword-editor-area .ProseMirror th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  text-align: left;
+}
+
+.auraword-editor-area .ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+/* Print styles for authentic Word printing */
+@media print {
+  body {
+    background: transparent !important;
+  }
+  header, footer, aside, .ribbon-container, .no-print {
+    display: none !important;
+  }
+  #auraword-pages-container {
+    transform: none !important;
+    gap: 0 !important;
+  }
+  #auraword-pages-container > div {
+    box-shadow: none !important;
+    border: none !important;
+    page-break-after: always;
+    margin: 0 !important;
+  }
+}
