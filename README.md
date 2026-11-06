@@ -42,7 +42,7 @@
 
 ## 1. Project Title and Branding
 
-- **Project Name:** Remix AuraWord – Professional Word Processor
+- **Project Name:** AuraWord – Professional Word Processor
 - **Product Name:** AuraWord
 - **Brand:** AuraNix Technologies
 - **Tagline:** *Built with innovation by AuraNix Technologies.*
