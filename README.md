@@ -1,16 +1,20 @@
 # AuraWord – Professional Word Processor
 
 **Product:** AuraWord  
-**Developed by:** AuraNix Technologies
+**Developed by:** AuraNix Technologies  
+**Author:** Jamshed Ali >> [jamshedali.me](https://jamshedali.me)
 
 ![React](https://img.shields.io/badge/React-19.0.1-61DAFB?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-7.0.2-3178C6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8.3.0-646CFF?logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.3.3-06B6D4?logo=tailwindcss&logoColor=white)
 ![TipTap](https://img.shields.io/badge/TipTap-3.32.0-000000)
+[![Author](https://img.shields.io/badge/Author-Jamshed_Ali-2b579a)](https://jamshedali.me)
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
 > **Built with innovation by AuraNix Technologies.**
+
+![Remix AuraWord Main Editor Workspace](docs/screenshots/editor-home-ribbon.png)
 
 ---
 
@@ -45,6 +49,7 @@
 - **Project Name:** AuraWord – Professional Word Processor
 - **Product Name:** AuraWord
 - **Brand:** AuraNix Technologies
+- **Author:** Jamshed Ali >> [jamshedali.me](https://jamshedali.me)
 - **Tagline:** *Built with innovation by AuraNix Technologies.*
 
 **AuraWord** is a browser-based word processing application modeled after desktop office suites. It combines a 10-tab ribbon interface, multi-format document import/export, offline-first IndexedDB storage, academic citation management, mail merge, freehand canvas annotation, and an optional AI writing assistant into a single-page React and TypeScript application.
@@ -322,15 +327,47 @@ Press the **Shortcuts** button in the **Help** tab at any time to view and searc
 
 ## 13. Screenshots and Preview Gallery
 
-> **Instructions for Adding Screenshots:**  
-> To include visual previews in your fork or deployment, capture screenshots of the running application at `http://localhost:3000`, save them into a `docs/screenshots/` folder, and replace the placeholder paths below.
+Below are live screenshots captured directly from **Remix AuraWord**:
 
-| Workspace View | Screenshot Placeholder |
-| :--- | :--- |
-| **Main Editor & Home Ribbon** | `<!-- ![Main Editor Workspace](docs/screenshots/editor-workspace.png) -->` *Add screenshot of the Print Layout view with the Home ribbon tab active.* |
-| **Home Screen & Templates** | `<!-- ![Home Screen Dashboard](docs/screenshots/home-dashboard.png) -->` *Add screenshot of the Home Screen showing templates and pinned documents.* |
-| **Aura AI Assistant & Comments** | `<!-- ![Aura Assistant & Comments](docs/screenshots/ai-and-comments.png) -->` *Add screenshot of the right-hand Aura Assistant and Comments panels.* |
-| **Citations & Mail Merge Modals** | `<!-- ![Citation & Mail Merge Modals](docs/screenshots/modals-preview.png) -->` *Add screenshot of the Citation Manager or Mail Merge recipient manager.* |
+### 1. Main Editor Workspace & Home Ribbon
+Full Print Layout canvas with the **Home** ribbon tab, horizontal inch ruler, formatting toolbar, and status bar.
+
+![Main Editor Workspace & Home Ribbon](docs/screenshots/editor-home-ribbon.png)
+
+---
+
+### 2. Home Screen Dashboard & Starter Templates
+Document management hub showing the four starter templates (*Blank Document*, *Project Proposal & Strategy*, *Academic Research Paper*, and *Formal Business Letter*), recent documents, and IndexedDB storage status.
+
+![Home Screen Dashboard & Starter Templates](docs/screenshots/home-dashboard.png)
+
+---
+
+### 3. Aura AI Writing Assistant & Context Operations
+The right-hand **Aura AI Assistant** panel open alongside a document, offering one-click editorial actions (*Rewrite & Polish*, *Fix Grammar*, *Summarize*, *Elaborate*, *Executive Tone*, *To Spanish*, and custom prompting).
+
+![Aura AI Writing Assistant Panel](docs/screenshots/aura-ai-assistant.png)
+
+---
+
+### 4. Mailings Ribbon & Live Mail Merge Token Preview
+The **Mailings** tab with **Preview Results** enabled, dynamically replacing `{{FirstName}}`, `{{LastName}}`, `{{Company}}`, and `{{City}}` tokens with recipient contact records (`Jessica Taylor`, `Apex Global`, `Chicago`).
+
+![Mailings Ribbon & Live Mail Merge Preview](docs/screenshots/mail-merge-preview.png)
+
+---
+
+### 5. Insert Ribbon Tab (Pages, Tables, Illustrations & Symbols)
+The **Insert** tab providing rapid insertion of Cover Pages, Blank Pages, Page Breaks, Tables, Pictures, Shapes, Charts, Hyperlinks, Headers/Footers, Text Boxes, Date/Time stamps, and Equations.
+
+![Insert Ribbon Tab](docs/screenshots/insert-ribbon-tab.png)
+
+---
+
+### 6. Backstage View (`File` Menu & Document Properties)
+The full-screen **Backstage View** (`File` tab) displaying real-time IndexedDB document properties, protection controls, and quick actions for New, Open, Save, Export (`.docx`, `.pdf`, `.html`, `.txt`), and Print.
+
+![Backstage File Menu & Document Info](docs/screenshots/backstage-file-menu.png)
 
 ---
 
@@ -340,12 +377,21 @@ Press the **Shortcuts** button in the **Help** tab at any time to view and searc
 /
 ├── .env.example                           # Environment variable template
 ├── .gitignore                             # Git ignore rules
+├── README.md                              # Project documentation
 ├── bun.lock                               # Bun lockfile
 ├── index.html                             # HTML entry point & Google Fonts (Aptos, Calibri, Inter, etc.)
 ├── metadata.json                          # Application metadata and capability declarations
 ├── package.json                           # Scripts, dependencies, and devDependencies
 ├── tsconfig.json                          # TypeScript compiler configuration (ES2022, bundler)
 ├── vite.config.ts                         # Vite bundler & Tailwind CSS v4 plugin configuration
+├── docs/
+│   └── screenshots/                       # Application UI screenshots used in README.md
+│       ├── aura-ai-assistant.png
+│       ├── backstage-file-menu.png
+│       ├── editor-home-ribbon.png
+│       ├── home-dashboard.png
+│       ├── insert-ribbon-tab.png
+│       └── mail-merge-preview.png
 └── src/
     ├── main.tsx                           # React DOM root mount
     ├── App.tsx                            # Root application component & state coordinator
@@ -466,7 +512,7 @@ Contributions, bug reports, and feature enhancements are welcome!
 This project is licensed under the **Apache License 2.0** (`SPDX-License-Identifier: Apache-2.0`), as declared in the source header of `src/App.tsx`.
 
 ```text
-Copyright 2026 AuraNix Technologies
+Copyright 2026 Jamshed Ali (jamshedali.me) & AuraNix Technologies
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -485,7 +531,10 @@ limitations under the License.
 
 ## 20. Credits and Acknowledgements
 
-Remix AuraWord is made possible by the open-source ecosystem:
+- **Author & Lead Engineer:** **Jamshed Ali** >> [jamshedali.me](https://jamshedali.me)
+- **Organization:** **AuraNix Technologies**
+
+Remix AuraWord is also made possible by the open-source ecosystem:
 
 - **[TipTap](https://tiptap.dev/) & [ProseMirror](https://prosemirror.net/)** for the extensible rich-text editor architecture.
 - **[docx](https://docx.js.org/)** by Dolan Miu for declarative client-side `.docx` generation.
@@ -499,6 +548,9 @@ Remix AuraWord is made possible by the open-source ecosystem:
 
 ## 21. About AuraNix Technologies
 
-**AuraNix Technologies** builds modern, local-first productivity software and intelligent web applications engineered for speed, reliability, and user privacy. With **AuraWord**, AuraNix Technologies brings the familiarity and depth of desktop document authoring to the modern web platform.
+**AuraNix Technologies** builds modern, local-first productivity software and intelligent web applications engineered for speed, reliability, and user privacy. Led by **Jamshed Ali** ([jamshedali.me](https://jamshedali.me)), AuraNix Technologies brings the familiarity and depth of desktop document authoring to the modern web platform with **AuraWord**.
+
+- **Author:** Jamshed Ali >> [jamshedali.me](https://jamshedali.me)
+- **Product:** AuraWord – Professional Word Processor
 
 *Built with innovation by AuraNix Technologies.*
