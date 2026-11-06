@@ -1,4 +1,4 @@
-# Remix AuraWord – Professional Word Processor
+# AuraWord – Professional Word Processor
 
 **Product:** AuraWord  
 **Developed by:** AuraNix Technologies
